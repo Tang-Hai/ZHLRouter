@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BA616D26686AD50046B26A /* ZHLFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA616B26686AD40046B26A /* ZHLFilterViewController.m */; };
+		04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */; };
+		04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA617226686EC20046B26A /* ZHLFilterService.m */; };
+		04BA62B92668B5110046B26A /* ZHLImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62B82668B5100046B26A /* ZHLImageProcessingViewController.m */; };
+		04BA62C12668B5490046B26A /* ZHLImageProcessingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */; };
+		04BA62C72668B69A0046B26A /* UIImage+ZHLProcessingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04BA616A26686AD40046B26A /* ZHLFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLFilterViewController.h; sourceTree = "<group>"; };
+		04BA616B26686AD40046B26A /* ZHLFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLFilterViewController.m; sourceTree = "<group>"; };
+		04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLFilterViewController.xib; sourceTree = "<group>"; };
+		04BA617126686EC20046B26A /* ZHLFilterService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLFilterService.h; sourceTree = "<group>"; };
+		04BA617226686EC20046B26A /* ZHLFilterService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLFilterService.m; sourceTree = "<group>"; };
+		04BA617726686EF60046B26A /* ZHLFilterServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLFilterServiceProtocol.h; sourceTree = "<group>"; };
+		04BA62B72668B5100046B26A /* ZHLImageProcessingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLImageProcessingViewController.h; sourceTree = "<group>"; };
+		04BA62B82668B5100046B26A /* ZHLImageProcessingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLImageProcessingViewController.m; sourceTree = "<group>"; };
+		04BA62BC2668B5280046B26A /* ZHLImageProcessingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLImageProcessingProtocol.h; sourceTree = "<group>"; };
+		04BA62BF2668B5490046B26A /* ZHLImageProcessingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLImageProcessingService.h; sourceTree = "<group>"; };
+		04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLImageProcessingService.m; sourceTree = "<group>"; };
+		04BA62C52668B69A0046B26A /* UIImage+ZHLProcessingTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHLProcessingTools.h"; sourceTree = "<group>"; };
+		04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHLProcessingTools.m"; sourceTree = "<group>"; };
 		0E14FC3ED3F87D7D024D6764 /* Pods-ZHLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Tests/Pods-ZHLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +81,9 @@
 		77BF1842DEB7C2CFCFA0439E /* Pods_ZHLRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHLRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93562DCFF9C1655249A1C986 /* Pods-ZHLRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Tests/Pods-ZHLRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A29B012D7A11F43EDDD1B8D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CADFE3A45FD23B559784063A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D61DAF14B801AF713AB368F6 /* ZHLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZHLRouter.podspec; path = ../ZHLRouter.podspec; sourceTree = "<group>"; };
+		A29B012D7A11F43EDDD1B8D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CADFE3A45FD23B559784063A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D61DAF14B801AF713AB368F6 /* ZHLRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZHLRouter.podspec; path = ../ZHLRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D6FB906C418716B35EA2BE3D /* Pods-ZHLRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E9048A1347B5778C98515FD7 /* Pods_ZHLRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHLRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +114,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BA616926686A810046B26A /* 滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA616A26686AD40046B26A /* ZHLFilterViewController.h */,
+				04BA616B26686AD40046B26A /* ZHLFilterViewController.m */,
+				04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */,
+				04BA617126686EC20046B26A /* ZHLFilterService.h */,
+				04BA617226686EC20046B26A /* ZHLFilterService.m */,
+			);
+			name = "滤镜";
+			sourceTree = "<group>";
+		};
+		04BA617626686EDB0046B26A /* 协议 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA617726686EF60046B26A /* ZHLFilterServiceProtocol.h */,
+				04BA62BC2668B5280046B26A /* ZHLImageProcessingProtocol.h */,
+			);
+			name = "协议";
+			sourceTree = "<group>";
+		};
+		04BA62B62668B4A30046B26A /* 图片处理 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA62B72668B5100046B26A /* ZHLImageProcessingViewController.h */,
+				04BA62B82668B5100046B26A /* ZHLImageProcessingViewController.m */,
+				04BA62BF2668B5490046B26A /* ZHLImageProcessingService.h */,
+				04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */,
+			);
+			name = "图片处理";
+			sourceTree = "<group>";
+		};
+		04BA62C42668B6580046B26A /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA62C52668B69A0046B26A /* UIImage+ZHLProcessingTools.h */,
+				04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */,
+			);
+			name = "工具";
+			sourceTree = "<group>";
+		};
+		04BA642C2668CC5B0046B26A /* 业务 */ = {
+			isa = PBXGroup;
+			children = (
+				04BA616926686A810046B26A /* 滤镜 */,
+				04BA62B62668B4A30046B26A /* 图片处理 */,
+			);
+			name = "业务";
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +201,9 @@
 		6003F593195388D20070C39A /* Example for ZHLRouter */ = {
 			isa = PBXGroup;
 			children = (
+				04BA642C2668CC5B0046B26A /* 业务 */,
+				04BA62C42668B6580046B26A /* 工具 */,
+				04BA617626686EDB0046B26A /* 协议 */,
 				6003F59C195388D20070C39A /* ZHLAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZHLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +265,6 @@
 				93562DCFF9C1655249A1C986 /* Pods-ZHLRouter_Tests.debug.xcconfig */,
 				462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,7 +316,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZHL;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = tanghai;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -258,6 +329,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,6 +353,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +439,12 @@
 			files = (
 				6003F59E195388D20070C39A /* ZHLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHLViewController.m in Sources */,
+				04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */,
+				04BA62C72668B69A0046B26A /* UIImage+ZHLProcessingTools.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				04BA62C12668B5490046B26A /* ZHLImageProcessingService.m in Sources */,
+				04BA62B92668B5110046B26A /* ZHLImageProcessingViewController.m in Sources */,
+				04BA616D26686AD50046B26A /* ZHLFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,23 +498,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -449,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,29 +553,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

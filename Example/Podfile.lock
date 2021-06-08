@@ -1,0 +1,16 @@
+PODS:
+  - ZHLRouter (0.1.0)
+
+DEPENDENCIES:
+  - ZHLRouter (from `../`)
+
+EXTERNAL SOURCES:
+  ZHLRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZHLRouter: ce90191ea3885d01a850b225d4fdc915ba1e9884
+
+PODFILE CHECKSUM: 2cd260950e812cdba39f211bd82a104cfc71f3f9
+
+COCOAPODS: 1.10.1
