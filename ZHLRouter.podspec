@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/tanghai/ZHLRouter'
+  s.homepage         = 'http://111.204.225.50:18845/gitlab/ZHLPrimaryStudy/ios/ZHLPrimaryStudy'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tanghai' => 'tanghai4053@dingtalk.com' }
-  s.source           = { :git => 'https://github.com/tanghai/ZHLRouter.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://111.204.225.50:18845/gitlab/ZHLPrimaryStudy/ios/ZHLPrimaryStudy.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
