@@ -32,6 +32,24 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ZHLRouter/Classes/**/*'
   
+  s.public_header_files = 'ZHLRouter/Classes/**/*.h'
+  s.requires_arc = true
+ 
+#  s.prepare_command = <<-EOF
+#
+#    # 业务Module
+#    rm -rf ZHLRouter/Classes/Modules
+#    mkdir ZHLRouter/Classes/Modules
+#    touch ZHLRouter/Classes/Modules/module.modulemap
+#    cat <<-EOF > ZHLRouter/Classes/Modules/module.modulemap
+#    framework module ZHLRouter {
+#      umbrella header "ZHLRouter.h"
+#      export *
+#    }
+#    \EOF
+#
+#  EOF
+  
   # s.resource_bundles = {
   #   'ZHLRouter' => ['ZHLRouter/Assets/*.png']
   # }

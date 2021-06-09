@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZHLRouter/ZHLRouter-Swift.h>
 
 #import "ZHLRouteAdapter.h"
 #import "ZHLRouter.h"
@@ -23,6 +24,10 @@
 @end
 
 @implementation ZHLRouter
+
++(void)load {
+    [ZHLSwiftLoadProtocolExecute executeLoad];
+}
 
 + (instancetype)share {
     static ZHLRouter *share;

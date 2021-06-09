@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041F8FB9266F690E00F09A0E /* 111111xxxxx.png in Resources */ = {isa = PBXBuildFile; fileRef = 041F8FB8266F690E00F09A0E /* 111111xxxxx.png */; };
+		041F8FC1266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */; };
 		04BA616D26686AD50046B26A /* ZHLFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA616B26686AD40046B26A /* ZHLFilterViewController.m */; };
 		04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */; };
 		04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA617226686EC20046B26A /* ZHLFilterService.m */; };
 		04BA62B92668B5110046B26A /* ZHLImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62B82668B5100046B26A /* ZHLImageProcessingViewController.m */; };
 		04BA62C12668B5490046B26A /* ZHLImageProcessingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */; };
 		04BA62C72668B69A0046B26A /* UIImage+ZHLProcessingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */; };
+		04E0F96526704F8200B5C6EA /* ZHLPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F96326704F8200B5C6EA /* ZHLPDFViewController.swift */; };
+		04E0F96626704F8200B5C6EA /* ZHLPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E0F96426704F8200B5C6EA /* ZHLPDFViewController.xib */; };
+		04E0F96B2670509C00B5C6EA /* ZHLPDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */; };
+		04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -43,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041F8FB8266F690E00F09A0E /* 111111xxxxx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111111xxxxx.png; sourceTree = "<group>"; };
+		041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg"; sourceTree = "<group>"; };
 		04BA616A26686AD40046B26A /* ZHLFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLFilterViewController.h; sourceTree = "<group>"; };
 		04BA616B26686AD40046B26A /* ZHLFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLFilterViewController.m; sourceTree = "<group>"; };
 		04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLFilterViewController.xib; sourceTree = "<group>"; };
@@ -56,6 +64,12 @@
 		04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLImageProcessingService.m; sourceTree = "<group>"; };
 		04BA62C52668B69A0046B26A /* UIImage+ZHLProcessingTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHLProcessingTools.h"; sourceTree = "<group>"; };
 		04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHLProcessingTools.m"; sourceTree = "<group>"; };
+		04E0F96226704F8200B5C6EA /* ZHLRouter_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHLRouter_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		04E0F96326704F8200B5C6EA /* ZHLPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHLPDFViewController.swift; sourceTree = "<group>"; };
+		04E0F96426704F8200B5C6EA /* ZHLPDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLPDFViewController.xib; sourceTree = "<group>"; };
+		04E0F9692670506300B5C6EA /* ZHLPDFProcessingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLPDFProcessingProtocol.h; sourceTree = "<group>"; };
+		04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHLPDFService.swift; sourceTree = "<group>"; };
+		04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "符号表工具iOS版-使用指南.pdf"; sourceTree = "<group>"; };
 		0E14FC3ED3F87D7D024D6764 /* Pods-ZHLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Tests/Pods-ZHLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041F8FB7266F690600F09A0E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */,
+				041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */,
+				041F8FB8266F690E00F09A0E /* 111111xxxxx.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		04BA616926686A810046B26A /* 滤镜 */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +155,7 @@
 			children = (
 				04BA617726686EF60046B26A /* ZHLFilterServiceProtocol.h */,
 				04BA62BC2668B5280046B26A /* ZHLImageProcessingProtocol.h */,
+				04E0F9692670506300B5C6EA /* ZHLPDFProcessingProtocol.h */,
 			);
 			name = "协议";
 			sourceTree = "<group>";
@@ -158,10 +183,21 @@
 		04BA642C2668CC5B0046B26A /* 业务 */ = {
 			isa = PBXGroup;
 			children = (
+				04E0F96126704E4D00B5C6EA /* PDF */,
 				04BA616926686A810046B26A /* 滤镜 */,
 				04BA62B62668B4A30046B26A /* 图片处理 */,
 			);
 			name = "业务";
+			sourceTree = "<group>";
+		};
+		04E0F96126704E4D00B5C6EA /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				04E0F96326704F8200B5C6EA /* ZHLPDFViewController.swift */,
+				04E0F96426704F8200B5C6EA /* ZHLPDFViewController.xib */,
+				04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */,
+			);
+			name = PDF;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -201,9 +237,11 @@
 		6003F593195388D20070C39A /* Example for ZHLRouter */ = {
 			isa = PBXGroup;
 			children = (
+				041F8FB7266F690600F09A0E /* Image */,
 				04BA642C2668CC5B0046B26A /* 业务 */,
 				04BA62C42668B6580046B26A /* 工具 */,
 				04BA617626686EDB0046B26A /* 协议 */,
+				04E0F96226704F8200B5C6EA /* ZHLRouter_Example-Bridging-Header.h */,
 				6003F59C195388D20070C39A /* ZHLAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZHLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -319,6 +357,9 @@
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = tanghai;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1230;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -349,10 +390,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E0F96626704F8200B5C6EA /* ZHLPDFViewController.xib in Resources */,
+				041F8FB9266F690E00F09A0E /* 111111xxxxx.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				041F8FC1266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg in Resources */,
+				04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */,
 				04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,10 +485,12 @@
 				6003F59E195388D20070C39A /* ZHLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHLViewController.m in Sources */,
 				04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */,
+				04E0F96B2670509C00B5C6EA /* ZHLPDFService.swift in Sources */,
 				04BA62C72668B69A0046B26A /* UIImage+ZHLProcessingTools.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				04BA62C12668B5490046B26A /* ZHLImageProcessingService.m in Sources */,
 				04BA62B92668B5110046B26A /* ZHLImageProcessingViewController.m in Sources */,
+				04E0F96526704F8200B5C6EA /* ZHLPDFViewController.swift in Sources */,
 				04BA616D26686AD50046B26A /* ZHLFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,12 +649,16 @@
 			baseConfigurationReference = D6FB906C418716B35EA2BE3D /* Pods-ZHLRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHLRouter/ZHLRouter-Prefix.pch";
 				INFOPLIST_FILE = "ZHLRouter/ZHLRouter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZHLRouter/ZHLRouter_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -618,12 +669,15 @@
 			baseConfigurationReference = 0E14FC3ED3F87D7D024D6764 /* Pods-ZHLRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHLRouter/ZHLRouter-Prefix.pch";
 				INFOPLIST_FILE = "ZHLRouter/ZHLRouter-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZHLRouter/ZHLRouter_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -633,6 +687,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93562DCFF9C1655249A1C986 /* Pods-ZHLRouter_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -658,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

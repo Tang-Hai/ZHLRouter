@@ -38,7 +38,7 @@
     }
 }
 
-- (void)deregisterServiceProvideForProcotol:(Protocol *)procotol {
+- (void)deregistererServiceProvideForProcotol:(Protocol *)procotol {
     if (procotol == nil) {
         NSAssert(NO, @"协议为nil");
         return;
