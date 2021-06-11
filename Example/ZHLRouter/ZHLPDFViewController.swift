@@ -20,6 +20,11 @@ class ZHLPDFViewController: UIViewController {
         self.pdf()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     func pdf() {
         // Create a URL for the PDF file.
         guard let path = Bundle.main.path(forResource: self.name, ofType: "pdf") else { return }

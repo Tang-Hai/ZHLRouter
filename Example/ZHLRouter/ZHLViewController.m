@@ -8,6 +8,7 @@
 
 #import <ZHLRouter/ZHLRouter.h>
 
+#import "ZHLAspectFillProtocol.h"
 #import "ZHLFilterServiceProtocol.h"
 #import "ZHLImageProcessingProtocol.h"
 
@@ -34,8 +35,13 @@
 
 - (IBAction)push1ButtonAction:(id)sender {
     Class<ZHLImageProcessingProtocol>imageClass = [ZHLRouter serviceProvideForProcotol:@protocol(ZHLImageProcessingProtocol)];
-    id<ZHLImageProcessingProtocol>image = [imageClass createProcessingServiceWithImage:[UIImage imageNamed:@"IMG_2608"]];
+    id<ZHLImageProcessingProtocol>image = [imageClass createProcessingServiceWithImage:[UIImage imageNamed:@"lroc_wac_nearside_noslew"]];
     [ZHLRouter performOnDestination:image path:ZHLRoutePath.pushFrom(self)];
+}
+
+- (IBAction)fill:(id)sender {
+    id<ZHLAspectFillProtocol>obj = [ZHLRouter serviceProvideForProcotol:@protocol(ZHLAspectFillProtocol)];
+    [ZHLRouter performOnDestination:obj path:ZHLRoutePath.pushFrom(self)];
 }
 
 

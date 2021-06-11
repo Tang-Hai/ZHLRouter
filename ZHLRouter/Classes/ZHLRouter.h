@@ -18,7 +18,7 @@ typedef void(^StartUpComplete)(void);
 
 + (BOOL)canUrlHandle;
 ///打开远程 URL
-+ (id __nullable)openServiceWithUrlPath:(NSURL *)url;
++ (id __nullable)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController *)fromController;
 
 @end
 
@@ -26,7 +26,7 @@ typedef void(^StartUpComplete)(void);
 
 + (BOOL)canConfigJsonHandle;
 ///打开远程配置 Json
-+ (id __nullable)openServiceWithConfigJson:(NSString *)json;
++ (id __nullable)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController *)fromController;
 
 @end
 
@@ -74,7 +74,7 @@ typedef void(^StartUpComplete)(void);
 ///从 Url 的队列中注销
 + (void)deregistererUrlServiceProvide:(id<ZHLRouterUrlProtocol>)provide;
 ///打开远程 URL
-+ (id __nullable)openServiceWithUrlPath:(NSURL *)url;
++ (id __nullable)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController *)fromController;
 
 
 
@@ -85,7 +85,7 @@ typedef void(^StartUpComplete)(void);
 ///从 Json 的队列中注销
 + (void)deregistererJsonServiceProvide:(id<ZHLRouterConfigJsonProtocol>)provide;
 ///打开远程配置 Json
-+ (id __nullable)openServiceWithConfigJson:(NSString *)json;
++ (id __nullable)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController *)fromController;
 
 
 

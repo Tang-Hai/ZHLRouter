@@ -36,6 +36,14 @@
                                     <action selector="push1ButtonAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="ZkN-AF-8YA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8V-rJ-tog">
+                                <rect key="frame" x="176" y="288" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fill"/>
+                                <connections>
+                                    <action selector="fill:" destination="whP-gf-Uak" eventType="touchUpInside" id="SGh-vN-7bp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -43,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="165.96701649175412"/>
+            <point key="canvasLocation" x="1263" y="194"/>
         </scene>
         <!--Image Processing View Controller-->
         <scene sceneID="MRz-DJ-V68">

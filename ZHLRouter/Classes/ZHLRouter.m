@@ -95,12 +95,12 @@
     }
 }
 ///打开远程 URL
-+ (id)openServiceWithUrlPath:(NSURL *)url {
++ (id)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController *)fromController {
     id result = nil;
     NSMutableArray <ZHLRouterUrlProtocol>*urlServices = [[self share] urlServices];
     for (id<ZHLRouterUrlProtocol> obj in urlServices) {
         if ([obj canUrlHandle]) {
-            result = [obj.class openServiceWithUrlPath:url];break;
+            result = [obj.class openServiceWithUrlPath:url fromController:fromController];break;
         }
     }
     return result;
@@ -112,12 +112,12 @@
     [[[self share] jsonServices] addObject:provide];
 }
 ///打开远程配置 Json
-+ (id)openServiceWithConfigJson:(NSString *)json {
++ (id)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController *)fromController {
     id result = nil;
     NSMutableArray <ZHLRouterConfigJsonProtocol>*urlServices = [[self share] jsonServices];
     for (id<ZHLRouterConfigJsonProtocol> obj in urlServices) {
         if ([obj canConfigJsonHandle]) {
-            result = [obj.class openServiceWithConfigJson:json];break;
+            result = [obj.class openServiceWithConfigJson:json fromController:fromController];break;
         }
     }
     return result;

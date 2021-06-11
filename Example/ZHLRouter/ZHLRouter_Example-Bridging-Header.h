@@ -3,4 +3,5 @@
 //
 
 #import "ZHLPDFProcessingProtocol.h"
+#import "ZHLAspectFillProtocol.h"
 #import "ZHLRouter-Swift.h"
