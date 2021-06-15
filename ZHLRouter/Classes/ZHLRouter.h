@@ -106,7 +106,7 @@ typedef void(^StartUpComplete)(void);
 
 #pragma mark - AppEvent
 
-///添加到 AppEvent 接收器中，不会强持有 obj；
+///添加到 AppEvent 接收器中，会强持有 obj；
 + (void)addAppEvent:(id<ZHLRouteAppEventProtocol>)obj;
 + (void)removeAppEvent:(id<ZHLRouteAppEventProtocol>)obj;
 
