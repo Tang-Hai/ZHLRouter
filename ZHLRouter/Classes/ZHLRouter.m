@@ -284,4 +284,92 @@
     }
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:openURL:options:)]) {
+            if ([obj application:application openURL:url options:options]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:handleOpenURL:)]) {
+            if([obj application:application handleOpenURL:url]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
+            if([obj application:application openURL:url sourceApplication:sourceApplication annotation:annotation]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:continueUserActivity:restorationHandler:)]) {
+            if([obj application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)]) {
+            [obj application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didReceiveRemoteNotification:)]) {
+            [obj application:application didReceiveRemoteNotification:userInfo];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)]) {
+            [obj application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didFailToRegisterForRemoteNotificationsWithError:)]) {
+            [obj application:application didFailToRegisterForRemoteNotificationsWithError:error];
+        }
+    }
+}
+
+-(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:handleEventsForBackgroundURLSession:completionHandler:)]) {
+            [obj application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
+        }
+    }
+}
+
 @end
