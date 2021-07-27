@@ -69,7 +69,7 @@
                 <constraint firstItem="bBH-is-JAo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cB0-rm-yg9"/>
                 <constraint firstItem="hW0-tv-9wG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wbb-vx-TVW"/>
             </constraints>
-            <point key="canvasLocation" x="65" y="69"/>
+            <point key="canvasLocation" x="387" y="57"/>
         </view>
         <panGestureRecognizer minimumNumberOfTouches="1" id="sds-Ak-fdk">
             <connections>

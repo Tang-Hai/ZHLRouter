@@ -35,7 +35,7 @@
 
 - (IBAction)push1ButtonAction:(id)sender {
     Class<ZHLImageProcessingProtocol>imageClass = [ZHLRouter serviceProvideForProcotol:@protocol(ZHLImageProcessingProtocol)];
-    id<ZHLImageProcessingProtocol>image = [imageClass createProcessingServiceWithImage:[UIImage imageNamed:@"lroc_wac_nearside_noslew"]];
+    id<ZHLImageProcessingProtocol>image = [imageClass createProcessingServiceWithImage:[UIImage imageNamed:@"7D3FCAE9-DFC8-4F6B-A543-05E94CA99616"]];
     [ZHLRouter performOnDestination:image path:ZHLRoutePath.pushFrom(self)];
 }
 

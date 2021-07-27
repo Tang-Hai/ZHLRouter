@@ -44,22 +44,29 @@ class ZHLPDFViewController: UIViewController {
         // Optionally, specify a cropping rect. Here, we don’t want to crop so we keep `cropRect` equal to `pageRect`.
         let cropRect = pageRect
 
-        let renderer = UIGraphicsImageRenderer(size: cropRect.size)
-        let img = renderer.image { ctx in
-            // Set the background color.
-            UIColor.white.set()
-            ctx.fill(CGRect(x: 0, y: 0, width: cropRect.width, height: cropRect.height))
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(size: cropRect.size)
+            let img = renderer.image { ctx in
+                // Set the background color.
+                UIColor.white.set()
+                ctx.fill(CGRect(x: 0, y: 0, width: cropRect.width, height: cropRect.height))
 
-            // Translate the context so that we only draw the `cropRect`.
-            ctx.cgContext.translateBy(x: -cropRect.origin.x, y: pageRect.size.height - cropRect.origin.y)
+                // Translate the context so that we only draw the `cropRect`.
+                ctx.cgContext.translateBy(x: -cropRect.origin.x, y: pageRect.size.height - cropRect.origin.y)
 
-            // Flip the context vertically because the Core Graphics coordinate system starts from the bottom.
-            ctx.cgContext.scaleBy(x: 1.0, y: -1.0)
+                // Flip the context vertically because the Core Graphics coordinate system starts from the bottom.
+                ctx.cgContext.scaleBy(x: 1.0, y: -1.0)
 
-            // Draw the PDF page.
-            ctx.cgContext.drawPDFPage(page)
+                // Draw the PDF page.
+                ctx.cgContext.drawPDFPage(page)
+                
+            }
+            self.imageView.image = img;
+        } else {
+            // Fallback on earlier versions
         }
-        self.imageView.image = img;
+        
+        
     }
 
 }

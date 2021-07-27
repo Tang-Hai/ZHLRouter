@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041F8FB9266F690E00F09A0E /* 111111xxxxx.png in Resources */ = {isa = PBXBuildFile; fileRef = 041F8FB8266F690E00F09A0E /* 111111xxxxx.png */; };
 		041F8FC1266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */; };
+		0464BD3726A1688E00124FDF /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464BD3626A1688E00124FDF /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png */; };
 		04BA616D26686AD50046B26A /* ZHLFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA616B26686AD40046B26A /* ZHLFilterViewController.m */; };
 		04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */; };
 		04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA617226686EC20046B26A /* ZHLFilterService.m */; };
@@ -26,6 +27,7 @@
 		04E0F96626704F8200B5C6EA /* ZHLPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E0F96426704F8200B5C6EA /* ZHLPDFViewController.xib */; };
 		04E0F96B2670509C00B5C6EA /* ZHLPDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */; };
 		04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */; };
+		04E15E2C267CA9B800DC9C24 /* ChromaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E15E2B267CA9B800DC9C24 /* ChromaKey.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -58,6 +60,7 @@
 /* Begin PBXFileReference section */
 		041F8FB8266F690E00F09A0E /* 111111xxxxx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111111xxxxx.png; sourceTree = "<group>"; };
 		041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg"; sourceTree = "<group>"; };
+		0464BD3626A1688E00124FDF /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png"; sourceTree = "<group>"; };
 		04BA616A26686AD40046B26A /* ZHLFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLFilterViewController.h; sourceTree = "<group>"; };
 		04BA616B26686AD40046B26A /* ZHLFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLFilterViewController.m; sourceTree = "<group>"; };
 		04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHLFilterViewController.xib; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 		04E0F9692670506300B5C6EA /* ZHLPDFProcessingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLPDFProcessingProtocol.h; sourceTree = "<group>"; };
 		04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHLPDFService.swift; sourceTree = "<group>"; };
 		04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "符号表工具iOS版-使用指南.pdf"; sourceTree = "<group>"; };
+		04E15E2A267CA9B800DC9C24 /* ChromaKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromaKey.h; sourceTree = "<group>"; };
+		04E15E2B267CA9B800DC9C24 /* ChromaKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromaKey.m; sourceTree = "<group>"; };
 		0E14FC3ED3F87D7D024D6764 /* Pods-ZHLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Tests/Pods-ZHLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +151,7 @@
 		041F8FB7266F690600F09A0E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				0464BD3626A1688E00124FDF /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png */,
 				04BD54112672F90E0007C599 /* lroc_wac_nearside_noslew.png */,
 				04BD54102672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg */,
 				04BD540C2672F8F90007C599 /* wac_nearside.tif */,
@@ -165,6 +171,8 @@
 				04BA616C26686AD40046B26A /* ZHLFilterViewController.xib */,
 				04BA617126686EC20046B26A /* ZHLFilterService.h */,
 				04BA617226686EC20046B26A /* ZHLFilterService.m */,
+				04E15E2A267CA9B800DC9C24 /* ChromaKey.h */,
+				04E15E2B267CA9B800DC9C24 /* ChromaKey.m */,
 			);
 			name = "滤镜";
 			sourceTree = "<group>";
@@ -436,6 +444,7 @@
 				04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */,
 				04DAB4602671C55E0018AA0B /* ZHLAspectFillViewController.xib in Resources */,
 				04BD540D2672F8F90007C599 /* wac_nearside.tif in Resources */,
+				0464BD3726A1688E00124FDF /* Simulator Screen Shot - iPhone 12 Pro Max - 2021-07-16 at 15.10.29.png in Resources */,
 				04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E15E2C267CA9B800DC9C24 /* ChromaKey.m in Sources */,
 				6003F59E195388D20070C39A /* ZHLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHLViewController.m in Sources */,
 				04BA617326686EC20046B26A /* ZHLFilterService.m in Sources */,
@@ -629,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -677,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -695,6 +705,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHLRouter/ZHLRouter-Prefix.pch";
 				INFOPLIST_FILE = "ZHLRouter/ZHLRouter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhl.jilinxx.iphone;
@@ -718,6 +729,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZHLRouter/ZHLRouter-Prefix.pch";
 				INFOPLIST_FILE = "ZHLRouter/ZHLRouter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhl.jilinxx.iphone;
