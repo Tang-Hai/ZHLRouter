@@ -18,7 +18,7 @@ typedef void(^StartUpComplete)(void);
 
 + (BOOL)canUrlHandle;
 ///打开远程 URL
-+ (id __nullable)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController *)fromController;
++ (id __nullable)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController  * _Nullable )fromController;
 
 @end
 
@@ -26,7 +26,7 @@ typedef void(^StartUpComplete)(void);
 
 + (BOOL)canConfigJsonHandle;
 ///打开远程配置 Json
-+ (id __nullable)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController *)fromController;
++ (id __nullable)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController * _Nullable )fromController;
 
 @end
 
@@ -106,7 +106,7 @@ typedef void(^StartUpComplete)(void);
 
 #pragma mark - AppEvent
 
-///添加到 AppEvent 接收器中，不会强持有 obj；
+///添加到 AppEvent 接收器中，会强持有 obj；
 + (void)addAppEvent:(id<ZHLRouteAppEventProtocol>)obj;
 + (void)removeAppEvent:(id<ZHLRouteAppEventProtocol>)obj;
 

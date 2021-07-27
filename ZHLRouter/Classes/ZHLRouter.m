@@ -15,12 +15,12 @@
 
 @property (strong,nonatomic) Class navClass;
 @property (strong,nonatomic) ZHLRouteAdapter *mainRouteAdapter;
-@property (strong,nonatomic) NSMutableArray <ZHLRouterUrlProtocol>*urlServices;
-@property (strong,nonatomic) NSMutableArray <ZHLRouterConfigJsonProtocol>*jsonServices;
-@property (strong,nonatomic) NSHashTable <id<ZHLRouteAppEventProtocol>>*appEventProtocols;
+@property (strong,nonatomic) NSMutableSet <ZHLRouterUrlProtocol>*urlServices;
+@property (strong,nonatomic) NSMutableSet <ZHLRouterConfigJsonProtocol>*jsonServices;
+@property (strong,nonatomic) NSMutableSet <id<ZHLRouteAppEventProtocol>>*appEventProtocols;
 
 @property (assign,nonatomic) BOOL isStartUpComplete;
-@property (strong,nonatomic) NSMutableArray <StartUpComplete>*startUpCompletes;
+@property (strong,nonatomic) NSMutableSet <StartUpComplete>*startUpCompletes;
 @end
 
 @implementation ZHLRouter
@@ -36,10 +36,10 @@
         share = [ZHLRouter new];
         share.navClass = UINavigationController.class;
         share.mainRouteAdapter = [ZHLRouteAdapter new];
-        share.urlServices = [NSMutableArray<ZHLRouterUrlProtocol> array];
-        share.jsonServices = [NSMutableArray<ZHLRouterConfigJsonProtocol> array];
-        share.startUpCompletes = [NSMutableArray<StartUpComplete> array];
-        share.appEventProtocols = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
+        share.urlServices = [NSMutableSet<ZHLRouterUrlProtocol> set];
+        share.jsonServices = [NSMutableSet<ZHLRouterConfigJsonProtocol> set];
+        share.startUpCompletes = [NSMutableSet<StartUpComplete> set];
+        share.appEventProtocols = [NSMutableSet<ZHLRouteAppEventProtocol> set];
     });
     return share;
 }
@@ -89,7 +89,7 @@
 }
 ///从 Url 的队列中注销
 + (void)deregistererUrlServiceProvide:(id<ZHLRouterUrlProtocol>)provide {
-    NSMutableArray <ZHLRouterUrlProtocol>*urlServices = [[self share] urlServices];
+    NSMutableSet <ZHLRouterUrlProtocol>*urlServices = [[self share] urlServices];
     if ([urlServices containsObject:provide]) {
         [urlServices removeObject:provide];
     }
@@ -97,7 +97,7 @@
 ///打开远程 URL
 + (id)openServiceWithUrlPath:(NSURL *)url fromController:(UIViewController *)fromController {
     id result = nil;
-    NSMutableArray <ZHLRouterUrlProtocol>*urlServices = [[self share] urlServices];
+    NSMutableSet <ZHLRouterUrlProtocol>*urlServices = [[self share] urlServices];
     for (id<ZHLRouterUrlProtocol> obj in urlServices) {
         if ([obj canUrlHandle]) {
             result = [obj.class openServiceWithUrlPath:url fromController:fromController];break;
@@ -114,7 +114,7 @@
 ///打开远程配置 Json
 + (id)openServiceWithConfigJson:(NSString *)json fromController:(UIViewController *)fromController {
     id result = nil;
-    NSMutableArray <ZHLRouterConfigJsonProtocol>*urlServices = [[self share] jsonServices];
+    NSMutableSet <ZHLRouterConfigJsonProtocol>*urlServices = [[self share] jsonServices];
     for (id<ZHLRouterConfigJsonProtocol> obj in urlServices) {
         if ([obj canConfigJsonHandle]) {
             result = [obj.class openServiceWithConfigJson:json fromController:fromController];break;
@@ -124,7 +124,7 @@
 }
 ///从 Json 的队列中注销
 + (void)deregistererJsonServiceProvide:(id<ZHLRouterConfigJsonProtocol>)provide {
-    NSMutableArray <ZHLRouterConfigJsonProtocol>*urlServices = [[self share] jsonServices];
+    NSMutableSet <ZHLRouterConfigJsonProtocol>*urlServices = [[self share] jsonServices];
     if ([urlServices containsObject:provide]) {
         [urlServices removeObject:provide];
     }
@@ -280,6 +280,94 @@
     for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
         if ([obj respondsToSelector:@selector(applicationWillTerminate:)]) {
             [obj applicationWillTerminate:application];
+        }
+    }
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:openURL:options:)]) {
+            if ([obj application:application openURL:url options:options]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:handleOpenURL:)]) {
+            if([obj application:application handleOpenURL:url]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:openURL:sourceApplication:annotation:)]) {
+            if([obj application:application openURL:url sourceApplication:sourceApplication annotation:annotation]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return isOpenURL;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler {
+    BOOL isOpenURL = NO;
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:continueUserActivity:restorationHandler:)]) {
+            if([obj application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
+                isOpenURL = YES;
+            }
+        }
+    }
+    return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)]) {
+            [obj application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didReceiveRemoteNotification:)]) {
+            [obj application:application didReceiveRemoteNotification:userInfo];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)]) {
+            [obj application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:didFailToRegisterForRemoteNotificationsWithError:)]) {
+            [obj application:application didFailToRegisterForRemoteNotificationsWithError:error];
+        }
+    }
+}
+
+-(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
+    for (id<ZHLRouteAppEventProtocol> obj in self.appEventProtocols) {
+        if ([obj respondsToSelector:@selector(application:handleEventsForBackgroundURLSession:completionHandler:)]) {
+            [obj application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
         }
     }
 }
