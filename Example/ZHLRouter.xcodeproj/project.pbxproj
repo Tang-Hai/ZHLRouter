@@ -15,7 +15,6 @@
 		04BA62B92668B5110046B26A /* ZHLImageProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62B82668B5100046B26A /* ZHLImageProcessingViewController.m */; };
 		04BA62C12668B5490046B26A /* ZHLImageProcessingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */; };
 		04BA62C72668B69A0046B26A /* UIImage+ZHLProcessingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */; };
-		04BD540D2672F8F90007C599 /* wac_nearside.tif in Resources */ = {isa = PBXBuildFile; fileRef = 04BD540C2672F8F90007C599 /* wac_nearside.tif */; };
 		04BD54122672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BD54102672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg */; };
 		04BD54132672F90E0007C599 /* lroc_wac_nearside_noslew.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BD54112672F90E0007C599 /* lroc_wac_nearside_noslew.png */; };
 		04D07A7B2671E5630017B092 /* unnamed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04D07A7A2671E5630017B092 /* unnamed.jpeg */; };
@@ -26,6 +25,7 @@
 		04E0F96626704F8200B5C6EA /* ZHLPDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E0F96426704F8200B5C6EA /* ZHLPDFViewController.xib */; };
 		04E0F96B2670509C00B5C6EA /* ZHLPDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */; };
 		04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */; };
+		0958247626A575C100DAF827 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0958247526A575C100DAF827 /* test.json */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -71,7 +71,6 @@
 		04BA62C02668B5490046B26A /* ZHLImageProcessingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLImageProcessingService.m; sourceTree = "<group>"; };
 		04BA62C52668B69A0046B26A /* UIImage+ZHLProcessingTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHLProcessingTools.h"; sourceTree = "<group>"; };
 		04BA62C62668B69A0046B26A /* UIImage+ZHLProcessingTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHLProcessingTools.m"; sourceTree = "<group>"; };
-		04BD540C2672F8F90007C599 /* wac_nearside.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = wac_nearside.tif; sourceTree = "<group>"; };
 		04BD54102672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg"; sourceTree = "<group>"; };
 		04BD54112672F90E0007C599 /* lroc_wac_nearside_noslew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lroc_wac_nearside_noslew.png; sourceTree = "<group>"; };
 		04D07A7A2671E5630017B092 /* unnamed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unnamed.jpeg; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		04E0F9692670506300B5C6EA /* ZHLPDFProcessingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLPDFProcessingProtocol.h; sourceTree = "<group>"; };
 		04E0F96A2670509C00B5C6EA /* ZHLPDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHLPDFService.swift; sourceTree = "<group>"; };
 		04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "符号表工具iOS版-使用指南.pdf"; sourceTree = "<group>"; };
+		0958247526A575C100DAF827 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		0E14FC3ED3F87D7D024D6764 /* Pods-ZHLRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		462B63D8AFBD89F5F6F29851 /* Pods-ZHLRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHLRouter_Tests/Pods-ZHLRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHLRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHLRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +148,6 @@
 			children = (
 				04BD54112672F90E0007C599 /* lroc_wac_nearside_noslew.png */,
 				04BD54102672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg */,
-				04BD540C2672F8F90007C599 /* wac_nearside.tif */,
 				04D07A7A2671E5630017B092 /* unnamed.jpeg */,
 				04E0FB1D26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf */,
 				041F8FC0266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg */,
@@ -172,10 +171,11 @@
 		04BA617626686EDB0046B26A /* 协议 */ = {
 			isa = PBXGroup;
 			children = (
+				0958247526A575C100DAF827 /* test.json */,
+				04DAB4632671C59A0018AA0B /* ZHLAspectFillProtocol.h */,
 				04BA617726686EF60046B26A /* ZHLFilterServiceProtocol.h */,
 				04BA62BC2668B5280046B26A /* ZHLImageProcessingProtocol.h */,
 				04E0F9692670506300B5C6EA /* ZHLPDFProcessingProtocol.h */,
-				04DAB4632671C59A0018AA0B /* ZHLAspectFillProtocol.h */,
 			);
 			name = "协议";
 			sourceTree = "<group>";
@@ -428,6 +428,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				04BD54132672F90E0007C599 /* lroc_wac_nearside_noslew.png in Resources */,
+				0958247626A575C100DAF827 /* test.json in Resources */,
 				04D07A7B2671E5630017B092 /* unnamed.jpeg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				04BD54122672F90E0007C599 /* tu-xing-xing-xing-shu-zi-yu-zhou-10k-qiangzhi-2560x1600_7.jpeg in Resources */,
@@ -435,7 +436,6 @@
 				041F8FC1266F6C2D00F09A0E /* 1a5ccdb6-a1f2-46a9-a5f8-26aaa1b0dbe8.jpeg in Resources */,
 				04E0FB1E26709B6000B5C6EA /* 符号表工具iOS版-使用指南.pdf in Resources */,
 				04DAB4602671C55E0018AA0B /* ZHLAspectFillViewController.xib in Resources */,
-				04BD540D2672F8F90007C599 /* wac_nearside.tif in Resources */,
 				04BA616E26686AD50046B26A /* ZHLFilterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,10 +503,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZHLRouter_Example/Pods-ZHLRouter_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZHLRouter/ZHLRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHLRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

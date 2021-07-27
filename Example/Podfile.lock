@@ -1,16 +1,23 @@
 PODS:
+  - lottie-ios (2.5.3)
   - ZHLRouter (0.1.0)
 
 DEPENDENCIES:
+  - lottie-ios (~> 2.5.0)
   - ZHLRouter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
 
 EXTERNAL SOURCES:
   ZHLRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   ZHLRouter: eb174165393212e9bb2d0703e05c0a744791111a
 
-PODFILE CHECKSUM: 2cd260950e812cdba39f211bd82a104cfc71f3f9
+PODFILE CHECKSUM: a9460fcd4f28961d6c420d07bd5e3ca7b17ee68e
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3

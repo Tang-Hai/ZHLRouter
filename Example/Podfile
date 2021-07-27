@@ -3,6 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'ZHLRouter_Example' do
+  pod "lottie-ios","~> 2.5.0"
   pod 'ZHLRouter', :path => '../'
 
   target 'ZHLRouter_Tests' do
